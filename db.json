@@ -92,9 +92,9 @@
     {
       "id": 12,
       "name": "Selenite",
-      "price": 0,
+      "price": 12.00,
       "image": "src/selenite.png",
-      "description": ": Selenite is associated with clarity, purification, and spiritual connection. It's often used for cleansing energy, meditation, and promoting mental clarity.",
+      "description": " Selenite is associated with clarity, purification, and spiritual connection. It's often used for cleansing energy, meditation, and promoting mental clarity.",
       "love": false
     }
   ],

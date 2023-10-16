@@ -25,7 +25,6 @@ body {
     font-family: "Lucida Console", "Courier New", monospace;
     text-shadow: 3px 3px 3px rgb(221, 159, 170);
     
-    
 }
 
 html, body {
@@ -132,3 +131,4 @@ input[type=text] {
 h3 {
     margin-right: 29%;
 }
+

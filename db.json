@@ -1,0 +1,117 @@
+{
+  "crystals": [
+    {
+      "id": 1,
+      "name": "Clear Quartz",
+      "price": 0,
+      "image": "",
+      "description": "Clear quartz is considered a master healer believed to amplify energy and thoughts. It's often used for clarity of mind, focus, and spiritual development." ,
+      "love": false
+    },
+
+    
+    {
+      "id": 2,
+      "name": "Rose Quartz",
+      "price": 0,
+      "image": "",
+      "description": "Rose quartz is a stone of love, pure and simple. It helps resolve old hurts and open the heart to receive love.",
+      "love": false
+    },
+    {
+      "id": 3,
+      "name": "Obsidian",
+      "price": 0,
+      "image": "",
+      "description": "Obsidian is believed to be a stone of clarity, with the ability to release emotional, physical, and spiritual blockages, drawing out stress and tension. Obsidian is also known for clearing ancient traumas, detoxification, and encouraging personal growth.",
+      "love": false
+    },    {
+      "id": 4,
+      "name": "Moonstone",
+      "price": 0,
+      "image": "Moonstone is a form of feldspar that is milky-white and has iridescence. It evokes a feeling of mystery and magic, and helps with intuition and connection with the Divine Feminine.",
+      "description": "",
+      "love": false
+    },
+    {
+      "id": 5,
+      "name": "Opal",
+      "price": 0,
+      "image": "",
+      "description": "Opal is an intense stone that brings the inner fire of purification to your emotional body to clear old patterns and embody the Light.",
+      "love": false
+    },
+    {
+      "id": 6,
+      "name": "Amethyst",
+      "price": 0,
+      "image": "Amethyst is a commonly available purple variety of quartz. It protects through purifying negative energy, clearing energetic distractions and supporting clarity in intuitive work.",
+      "description": "",
+      "love": false
+    },
+    {
+      "id": 7,
+      "name": "Tiger Eyes",
+      "price": 0,
+      "image": "",
+      "description": "Tiger Eye is a shimmery golden-brown form of quartz. It supports resilience and balance while taking action aligned with one's goals and intention.",
+      "love": false
+    },
+    {
+      "id": 8,
+      "name": "Lapis Lazuli",
+      "price": 0,
+      "image": "",
+      "description": "Lapis Lazuli is a deep blue stone with sparkly inclusions of pyrite. Lapis acts as a gateway to information and inspiration from other realms, helping you find deeper truth and access visionary awareness.",
+      "love": false
+    },
+    {
+      "id": 9,
+      "name": "Citrine",
+      "price": 0,
+      "image": "",
+      "description": "Citrine is associated with abundance, prosperity, and positive energy. It's believed to enhance creativity, motivation, and self-expression.",
+      "love": false
+    },
+    {
+      "id": 10,
+      "name": "Black Tourmaline",
+      "price": 0,
+      "image": "",
+      "description": "Known for its protective properties, it is believed to absorb negative energy and promote security. It's often used for grounding and protection against electromagnetic fields.",
+      "love": false
+    },
+    {
+      "id": 11,
+      "name": "Turquoise",
+      "price": 0,
+      "image": "",
+      "description": "Turquoise is known for its healing properties and is often used for physical and emotional well-being. It's believed to promote balance, intuition, and positive thinking.",
+      "love": false
+    },
+    {
+      "id": 12,
+      "name": "Selenite",
+      "price": 0,
+      "image": "",
+      "description": ": Selenite is associated with clarity, purification, and spiritual connection. It's often used for cleansing energy, meditation, and promoting mental clarity.",
+      "love": false
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "name": "Donald Biden"
+    },
+    {
+      "id": 2,
+      "body": "some comment",
+      "name": "Barrack Clinton"
+    }
+  ],
+  "subscription": {
+    "id": 1,
+    "email": "demo@flatiron.com"
+  }
+}

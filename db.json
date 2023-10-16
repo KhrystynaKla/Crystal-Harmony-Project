@@ -15,7 +15,7 @@
       "id": 2,
       "name": "Rose Quartz",
       "price": 10.99,
-      "image": "src/rose-quartz.png",
+      "image": "src/rose-quartz2.png",
       "description": "Rose quartz is a stone of love, pure and simple. It helps resolve old hurts and open the heart to receive love.",
       "love": false,
       "number_in_cart": 0

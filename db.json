@@ -32,7 +32,7 @@
       "id": 4,
       "name": "Moonstone",
       "price": 11.99,
-      "image": "src/moonstone.png",
+      "image": "src/moonstone0.png",
       "description": "Moonstone is a form of feldspar that is milky-white and has iridescence. It evokes a feeling of mystery and magic, and helps with intuition and connection with the Divine Feminine.",
       "love": false,
       "number_in_cart": 0

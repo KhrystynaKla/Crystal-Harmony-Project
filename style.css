@@ -2,15 +2,17 @@ body {
     font-family: "Lucida Console", "Courier New", monospace;
     margin: 0;
     padding: 0;
+    background-image: url('pink.jpeg');
+    background-size: cover;
 }
 
 .store-header {
     background-image: url('pictures/1.png');
     background-size: cover;
     background-position: center;
-    color: blue;
+    color: black;
     text-align: center;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,9 +21,9 @@ body {
 
 .store-name {
     font-size: 60px;
-    color: rgb(60, 22, 84);
+    color: black;
     font-family: "Lucida Console", "Courier New", monospace;
-    text-shadow: 3px 3px 2px pink;
+    text-shadow: 3px 3px 3px rgb(221, 159, 170);
     
 }
 
@@ -31,6 +33,11 @@ html, body {
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
+#store-items {
+    color: #7B887A;
+    margin-left: 10%;
+    background-color: #ffe6e6;
+}
 
 #list-of-items {
     width:25%;
@@ -71,12 +78,12 @@ html, body {
 }
 
 #item-information {
-    position: absolute;
+    position: relative;
     top:0px;
     margin-left: 20px;
     margin-top: 20px;
     padding: 20px;
-    width:40%;
+    width:90%;
     height:auto;
     background-color: rgba(255, 255, 255, 0.75);
 }
@@ -108,8 +115,20 @@ input[type=text] {
 }
 
 
-form {
-    display:flex;
-    height: 30px;
+
+#form {
+    margin-right: 80px;
+    
+}
+
+#item-image {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    margin-right: 29%;
 }
 

@@ -21,21 +21,94 @@ body {
     font-size: 60px;
     color: rgb(60, 22, 84);
     font-family: 'Satisfy', cursive;
+    text-shadow: 3px 3px 2px pink;
     
 }
 
-.product-list {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 20px;
-    text-shadow: 1px 1px 2px pink;
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
 }
 
-.product-item {
-    flex: 0 0 200px; /* Adjust the width as needed */
-    margin: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+
+#list-of-items {
+    width:25%;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+    display:block;
+}
+
+#list-of-items h2 {
+    font-size: 3em;
+}
+
+#container {
+    display:flex;
+    height:100%;
+}
+
+#list-of-items span {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#list-of-items span:not(:last-child) { 
+    margin-bottom: .5em;  
+}
+
+#list-of-items span {
+    float: left;
+    clear: left;
+}
+
+
+#item-detail {
+    position: relative;
+    margin-top: 20px;
+}
+
+#item-information {
+    position: absolute;
+    top:0px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    width:40%;
+    height:auto;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#item-name {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+#item-description {
+    font-size: 1.25em;
+}
+
+input[type=submit] {
+    border:0px;
+    background:white;
+    font-size: 1em;
+    border: 1px solid black;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    width: 150px;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:10px;
+}
+
+
+form {
+    display:flex;
+    height: 30px;
 }

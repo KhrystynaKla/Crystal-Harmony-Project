@@ -18,19 +18,17 @@ function addElementToTheMenu(element){
     const span = document.createElement('span')
     span.textContent=element.name;
     Items.appendChild(span)
-    // challenge 3
     span.addEventListener('click', () => addElementToTheDishSection(element))
 }
 
 
-// challenge #2
 function addElementToTheDishSection(element){
     currentlyDisplayedMenuItem=element; // bonus chall
 
     document.querySelector('#item-image').src=element.image;
     document.querySelector('#item-name').textContent=element.name;
     document.querySelector('#item-description').textContent=element.description;
-    document.querySelector('#item-price').textContent=element.price;
+    document.querySelector('#item-price').textContent='$ '+element.price;
     const numberInCart = document.getElementById('number-in-cart')
     numberInCart.textContent = element.number_in_bag
 }

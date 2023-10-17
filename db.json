@@ -116,7 +116,6 @@
       "name": "Donald Biden"
     },
     {
-<<<<<<< HEAD
       "id": 2,
       "body": "some comment",
       "name": "Barrack Clinton"
@@ -125,11 +124,6 @@
       "body": "I love crystals!!!!!!!!",
       "name": "Ian",
       "id": 3
-=======
-      "body": "Quack!!!",
-      "name": "Quack",
-      "id": 6
->>>>>>> 13366e073c4f949ea0aa251f4efa30fc3e9f670c
     }
   ],
   "subscription": {

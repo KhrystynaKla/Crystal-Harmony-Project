@@ -130,7 +130,8 @@ function addReview(object) {
 
     const deleteButton = document.createElement('button');
     divReview.appendChild(deleteButton)
-    deleteButton.textContent = 'X'
+    deleteButton.textContent = 'X';
+    
 
     deleteButton.addEventListener('click', () => {
         divReview.remove();

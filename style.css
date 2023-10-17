@@ -28,7 +28,6 @@ body {
 .store-name {
     font-size: 40px;
     color: black;
-    font-family: "Lucida Console", "Courier New", monospace;
     text-shadow: 3px 3px 3px rgb(221, 159, 170);
     background-color: white;
     margin-top: 0%;

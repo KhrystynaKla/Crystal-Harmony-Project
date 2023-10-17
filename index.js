@@ -7,19 +7,17 @@ const itemImage = document.querySelector('#item-image')
 fetch('http://localhost:3000/crystals')
 .then(response => response.json())
 .then(data =>{
-    addElementToTheDishSection(data[0]);
+    addElementDetails(data[0]);
     data.forEach(element => { 
-        addElementToTheMenu(element)
-
-        console.log(element.name)
+        addElementToList(element)
     })
 })
 
-function addElementToTheMenu(element){
+function addElementToList(element){
     const span = document.createElement('span')
     span.textContent=element.name;
     Items.appendChild(span)
-    span.addEventListener('click', () => addElementToTheDishSection(element))
+    span.addEventListener('click', () => addElementDetails(element))
     span.addEventListener('mouseover', () => {
         span.style.textShadow = '0 0 10px #e4b7b7';
     });
@@ -30,7 +28,7 @@ function addElementToTheMenu(element){
 }
 
 
-function addElementToTheDishSection(element){
+function addElementDetails(element){
     currentlyDisplayedMenuItem=element; // bonus chall
 
     document.querySelector('#item-image').src=element.image;

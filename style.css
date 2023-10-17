@@ -61,9 +61,16 @@ html, body {
     font-size: 2em;
 }
 
-#container {
+.container {
     display:flex;
     height:100%;
+}
+
+.container2 {
+    display:relative;
+    width:90%;
+    margin-left: 40%;
+
 }
 
 #list-of-items span {
@@ -93,7 +100,7 @@ html, body {
     top:0px;
     margin-left: 20px;
     margin-top: 20px;
-    padding: 20px;
+    padding: 10px;
     width:80%;
     height:auto;
     background-color: rgba(255, 255, 255, 0.75);

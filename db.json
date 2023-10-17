@@ -7,7 +7,7 @@
       "image": "src/clearQuartz.png",
       "description": "Clear quartz is considered a master healer believed to amplify energy and thoughts. It's often used for clarity of mind, focus, and spiritual development.",
       "love": false,
-      "number_in_cart": 13
+      "number_in_cart": 0
     },
     {
       "id": 2,
@@ -33,7 +33,7 @@
       "price": 11.99,
       "image": "src/moonstone2.png",
       "description": "Moonstone is a form of feldspar that is milky-white and has iridescence. It evokes a feeling of mystery and magic, and helps with intuition and connection with the Divine Feminine.",
-      "love": true,
+      "love": false,
       "number_in_cart": 0
     },
     {
@@ -60,7 +60,7 @@
       "price": 9.99,
       "image": "src/tiger-eyes.png",
       "description": "Tiger Eye is a shimmery golden-brown form of quartz. It supports resilience and balance while taking action aligned with one's goals and intention.",
-      "love": false,
+      "love": true,
       "number_in_cart": 0
     },
     {
@@ -69,7 +69,7 @@
       "price": 10.99,
       "image": "src/lapis-lazuli.png",
       "description": "Lapis Lazuli is a deep blue stone with sparkly inclusions of pyrite. Lapis acts as a gateway to information and inspiration from other realms, helping you find deeper truth and access visionary awareness.",
-      "love": true,
+      "love": false,
       "number_in_cart": 0
     },
     {
@@ -87,7 +87,7 @@
       "price": 10.25,
       "image": "src/black-tourmaline.png",
       "description": "Known for its protective properties, it is believed to absorb negative energy and promote security. It's often used for grounding and protection against electromagnetic fields.",
-      "love": true,
+      "love": false,
       "number_in_cart": 0
     },
     {
@@ -116,20 +116,14 @@
       "name": "Donald Biden"
     },
     {
-<<<<<<< HEAD
       "id": 2,
       "body": "some comment",
       "name": "Barrack Clinton"
     },
     {
-      "body": "I love crystals!!!!!!!!",
-      "name": "Ian",
+      "body": "I would prefer if there were more Macedonian crystals",
+      "name": "Ian Alexander the Great",
       "id": 3
-=======
-      "body": "Quack!!!",
-      "name": "Quack",
-      "id": 6
->>>>>>> 13366e073c4f949ea0aa251f4efa30fc3e9f670c
     }
   ],
   "subscription": {

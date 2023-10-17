@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Clear Quartz",
-      "price": 12.00,
+      "price": 12.75,
       "image": "src/quartz.png",
       "description": "Clear quartz is considered a master healer believed to amplify energy and thoughts. It's often used for clarity of mind, focus, and spiritual development." ,
       "love": false

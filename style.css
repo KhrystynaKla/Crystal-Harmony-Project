@@ -2,28 +2,38 @@ body {
     font-family: "Lucida Console", "Courier New", monospace;
     margin: 0;
     padding: 0;
-    background-image: url('pink.jpeg');
     background-size: cover;
 }
 
 .store-header {
-    background-image: url('pictures/1.png');
+    background-image: url('picture/result.png');
     background-size: cover;
     background-position: center;
-    color: black;
     text-align: center;
     height: 30vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
+#story {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 19px;
+    background-color: white;
+}
+
 .store-name {
-    font-size: 60px;
+    font-size: 40px;
     color: black;
     font-family: "Lucida Console", "Courier New", monospace;
     text-shadow: 3px 3px 3px rgb(221, 159, 170);
+    background-color: white;
+    margin-top: 0%;
+    display: block
+    
     
 }
 
@@ -42,13 +52,14 @@ html, body {
 #list-of-items {
     width:25%;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 8%;
     margin-top: 20px;
+    margin-right: 8%;
     display:block;
 }
 
 #list-of-items h2 {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 #container {
@@ -75,6 +86,7 @@ html, body {
 #item-detail {
     position: relative;
     margin-top: 20px;
+    margin-right: 8%;
 }
 
 #item-information {
@@ -83,7 +95,7 @@ html, body {
     margin-left: 20px;
     margin-top: 20px;
     padding: 20px;
-    width:90%;
+    width:80%;
     height:auto;
     background-color: rgba(255, 255, 255, 0.75);
 }
@@ -94,7 +106,7 @@ html, body {
 }
 
 #item-description {
-    font-size: 1.25em;
+    font-size: 19px;
 }
 
 input[type=submit] {
@@ -115,9 +127,11 @@ input[type=text] {
 }
 
 
-
-#form {
-    margin-right: 90px;
+#add-to-cart-section {
+    margin-bottom: 30%;
+    position: relative;
+    float: right;
+    margin-right: 8%;
     
 }
 
@@ -126,9 +140,14 @@ input[type=text] {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0%;
 }
 
 h3 {
     margin-right: 29%;
+}
+
+#cart-button {
+    height: 40px;
 }
 

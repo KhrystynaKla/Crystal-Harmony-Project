@@ -67,7 +67,7 @@
       "id": 8,
       "name": "Lapis Lazuli",
       "price": 10.99,
-      "image": "src/lapisLazuli.png",
+      "image": "src/lapis-lazuli.png",
       "description": "Lapis Lazuli is a deep blue stone with sparkly inclusions of pyrite. Lapis acts as a gateway to information and inspiration from other realms, helping you find deeper truth and access visionary awareness.",
       "love": false,
       "number_in_cart": 0

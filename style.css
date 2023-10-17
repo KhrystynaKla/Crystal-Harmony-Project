@@ -150,3 +150,13 @@ h3 {
     height: 40px;
 }
 
+#like-button {
+    height: 70%;
+    width: 80%;
+}
+
+#like{
+    height: 45px;
+    width: 50px;
+    border-radius: 10px;
+}

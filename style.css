@@ -185,7 +185,7 @@ h3 {
 
 #review-list > div > button {
     float: right;
-<<<<<<< HEAD
+
 }
 
 .checked {
@@ -194,7 +194,5 @@ h3 {
 
 #star {
     object-position:center;
+    margin-left: 20%;
 }
-=======
-}
->>>>>>> c764e1b277eeb1f385e629cfc52c5f3d3a3b8938

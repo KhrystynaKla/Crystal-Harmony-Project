@@ -6,7 +6,7 @@
       "price": 12.75,
       "image": "src/clearQuartz.png",
       "description": "Clear quartz is considered a master healer believed to amplify energy and thoughts. It's often used for clarity of mind, focus, and spiritual development.",
-      "love": true,
+      "love": false,
       "number_in_cart": 0
     },
     {
@@ -31,7 +31,7 @@
       "id": 4,
       "name": "Moonstone",
       "price": 11.99,
-      "image": "src/moonstone0.png",
+      "image": "src/moonstone2.png",
       "description": "Moonstone is a form of feldspar that is milky-white and has iridescence. It evokes a feeling of mystery and magic, and helps with intuition and connection with the Divine Feminine.",
       "love": false,
       "number_in_cart": 0

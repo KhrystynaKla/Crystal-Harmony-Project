@@ -7,7 +7,7 @@
       "image": "src/clearQuartz.png",
       "description": "Clear quartz is considered a master healer believed to amplify energy and thoughts. It's often used for clarity of mind, focus, and spiritual development.",
       "love": false,
-      "number_in_cart": 0
+      "number_in_cart": 13
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "image": "src/rose-quartz2.png",
       "description": "Rose quartz is a stone of love, pure and simple. It helps resolve old hurts and open the heart to receive love.",
       "love": true,
-      "number_in_cart": 0
+      "number_in_cart": 6
     },
     {
       "id": 3,
@@ -42,7 +42,7 @@
       "price": 8.99,
       "image": "src/watermelon-fluorrite.png",
       "description": "Watermelon fluorite helps to heal emotional scars, as well as heartbreak, past trauma, and emotional wounds. It allows us to open our hearts to love.",
-      "love": false,
+      "love": true,
       "number_in_cart": 0
     },
     {
@@ -119,6 +119,11 @@
       "id": 2,
       "body": "some comment",
       "name": "Barrack Clinton"
+    },
+    {
+      "body": "I love crystals!!!!!!!!",
+      "name": "Ian",
+      "id": 3
     }
   ],
   "subscription": {

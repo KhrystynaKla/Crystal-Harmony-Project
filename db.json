@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Clear Quartz",
       "price": 12.75,
-      "image": "src/quartz.png",
+      "image": "src/clearQuartz.png",
       "description": "Clear quartz is considered a master healer believed to amplify energy and thoughts. It's often used for clarity of mind, focus, and spiritual development." ,
       "love": false,
       "number_in_cart": 0
@@ -15,7 +15,7 @@
       "id": 2,
       "name": "Rose Quartz",
       "price": 10.99,
-      "image": "src/rose-quartz.png",
+      "image": "src/rose-quartz2.png",
       "description": "Rose quartz is a stone of love, pure and simple. It helps resolve old hurts and open the heart to receive love.",
       "love": false,
       "number_in_cart": 0
@@ -32,7 +32,7 @@
       "id": 4,
       "name": "Moonstone",
       "price": 11.99,
-      "image": "src/moonstone.png",
+      "image": "src/moonstone0.png",
       "description": "Moonstone is a form of feldspar that is milky-white and has iridescence. It evokes a feeling of mystery and magic, and helps with intuition and connection with the Divine Feminine.",
       "love": false,
       "number_in_cart": 0
@@ -50,7 +50,7 @@
       "id": 6,
       "name": "Amethyst",
       "price": 12.99,
-      "image": "src/amethyst2.png",
+      "image": "src/Amethyst.png",
       "description": "Amethyst is a commonly available purple variety of quartz. It protects through purifying negative energy, clearing energetic distractions and supporting clarity in intuitive work.",
       "love": false,
       "number_in_cart": 0

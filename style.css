@@ -185,4 +185,16 @@ h3 {
 
 #review-list > div > button {
     float: right;
+<<<<<<< HEAD
 }
+
+.checked {
+    color: orange;
+}
+
+#star {
+    object-position:center;
+}
+=======
+}
+>>>>>>> c764e1b277eeb1f385e629cfc52c5f3d3a3b8938

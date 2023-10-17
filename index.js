@@ -78,5 +78,6 @@ likeButton.addEventListener('click', () => {
             love : currentElement.love 
         })
     })
-    
+    .then(response => response.json())
+    .then(data => console.log(data))
 })

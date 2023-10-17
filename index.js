@@ -1,6 +1,7 @@
 const Items = document.querySelector('#store-items');
 const totalPrice = document.createElement('h3')
 const itemImage = document.querySelector('#item-image')
+const likeButton = document.getElementById('like')
 
 
 //challenge #1

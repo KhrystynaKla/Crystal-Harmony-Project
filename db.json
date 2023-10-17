@@ -6,7 +6,7 @@
       "price": 12.75,
       "image": "src/clearQuartz.png",
       "description": "Clear quartz is considered a master healer believed to amplify energy and thoughts. It's often used for clarity of mind, focus, and spiritual development.",
-      "love": true,
+      "love": false,
       "number_in_cart": 0
     },
     {
@@ -60,7 +60,7 @@
       "price": 9.99,
       "image": "src/tiger-eyes.png",
       "description": "Tiger Eye is a shimmery golden-brown form of quartz. It supports resilience and balance while taking action aligned with one's goals and intention.",
-      "love": false,
+      "love": true,
       "number_in_cart": 0
     },
     {
@@ -105,7 +105,7 @@
       "price": 14.99,
       "image": "src/selenite.png",
       "description": " Selenite is associated with clarity, purification, and spiritual connection. It's often used for cleansing energy, meditation, and promoting mental clarity.",
-      "love": false,
+      "love": true,
       "number_in_cart": 0
     }
   ],

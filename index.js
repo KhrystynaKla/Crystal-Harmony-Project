@@ -68,7 +68,6 @@ likeButton.addEventListener('click', () => {
         currentElement.love = true;
         likeButtonValue = true;
         likeImg.src = 'picture/like.png'
-        console.log(true)
         
     } else if (currentElement.love === true) {
         currentElement.love = false;
@@ -87,8 +86,4 @@ likeButton.addEventListener('click', () => {
     })
     .then(response => response.json())
     .then(data => console.log(data))
-<<<<<<< HEAD
-    
-=======
->>>>>>> cb6571a492916ca836d12a6b7c7834d9bbbf9753
 })

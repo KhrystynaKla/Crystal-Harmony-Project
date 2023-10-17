@@ -10,6 +10,7 @@ const review = document.getElementById('review')
 const numberInCart = document.getElementById('number-in-cart')
 const numberToAdd = document.getElementById('cart-amount')
 const cartForm = document.getElementById('cart-form')
+
 let currentElement
 let currentData
 let likeButtonValue
@@ -26,17 +27,7 @@ fetch('http://localhost:3000/crystals')
         addElementToList(element)
     })
 
-
 })
-
-fetch('http://localhost:3000/Reviews')
-.then(response => response.json())
-.then(reviews =>{
-    reviews.forEach(review => { 
-        addReview(review)
-    })
-})
-
 
 function addElementToList(element){
     const span = document.createElement('span')
@@ -60,6 +51,7 @@ function addElementDetails(element){
     document.querySelector('#item-name').textContent=element.name;
     document.querySelector('#item-description').textContent=element.description;
     document.querySelector('#item-price').textContent='$ '+element.price;
+
     numberInCart.textContent = element.number_in_cart
     likeImg.src = element.love ? 'picture/like.png' : 'picture/unlike.png';
 
@@ -103,71 +95,79 @@ likeButton.addEventListener('click', () => {
     .then(data => console.log(data))
 })
 
-
-reviewForm.addEventListener('submit', (event)=>{
-    event.preventDefault()
+reviewForm.addEventListener('submit', (e) => {
+    e.preventDefault();
     let newReview = {
         body: review.value,
-        name: reviewName.value 
+        name: reviewName.value
     }
-
     addReview(newReview)
 
-
-    fetch('http://localhost:3000/Reviews',{
-        method: 'POST',
+    fetch('http://localhost:3000/Reviews', {
+        method: "POST",
         headers: {
-            'Content-Type': "application/json",
+            'Content-Type': "application/json"
         },
         body: JSON.stringify(newReview)
     })
     .then(response => response.json())
     .then(data => console.log(data))
+    reviewForm.reset()
 })
 
-
-function addReview (object){
-    const diwReview = document.createElement('div');
-    const pName = document.createElement('p')
+function addReview(object) {
+    const divReview = document.createElement('div');
+    const pName = document.createElement('p');
     const pReview = document.createElement('p')
-    pName.textContent = 'Name: '+object.name
-    pReview.textContent ='Review: '+object.body
 
-    diwReview.appendChild(pName)
-    diwReview.appendChild(pReview)
+    pName.textContent = `Name: ${object.name}`;
+    pReview.textContent = `Review: ${object.body}`;
 
-    reviewList.appendChild(diwReview)
+    divReview.appendChild(pName);
+    divReview.appendChild(pReview);
 
-    const deleteButton = document.createElement('button')
+    reviewList.appendChild(divReview);
+
+    const deleteButton = document.createElement('button');
+    divReview.appendChild(deleteButton)
     deleteButton.textContent = 'X'
-    diwReview.appendChild(deleteButton)
-    deleteButton.addEventListener('click', ()=>{
-        diwReview.remove()
 
+    deleteButton.addEventListener('click', () => {
+        divReview.remove();
+        
         fetch(`http://localhost:3000/Reviews/${object.id}`,{
             method: 'DELETE'
         })
         .then(response=> response.json())
         .then(data => console.log(data))
     })
+    
 }
 
-cartForm.addEventListener('submit', (event)=>{
-    event.preventDefault()
-    let sum = Number(numberInCart.textContent) + Number(numberToAdd.value);
-    numberInCart.textContent=sum
-    currentElement.number_in_cart = sum;
-    cartForm.reset()
-
-    fetch(`http://localhost:3000/crystals/${currentElement.id}`,{
-        method: 'PATCH',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({number_in_cart: sum})
-    })
-    .then(response=>response.json())
-    .then(data => console.log(data))
+fetch('http://localhost:3000/Reviews')
+.then(response => response.json())
+.then(data => {
+    data.forEach(object => addReview(object))
 })
 
+cartForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let sum = Number(numberInCart.textContent) + Number(numberToAdd.value)
+    numberInCart.textContent = sum
 
+    currentElement.number_in_cart = sum;
+
+    fetch(`http://localhost:3000/crystals/${currentElement.id}`, {
+        method: "PATCH",
+        headers: {
+            'Content-Type': "application/json"
+        },
+        body: JSON.stringify({
+            number_in_cart: sum
+        })
+        
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    cartForm.reset()
+})

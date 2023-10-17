@@ -5,12 +5,10 @@
       "name": "Clear Quartz",
       "price": 12.75,
       "image": "src/clearQuartz.png",
-      "description": "Clear quartz is considered a master healer believed to amplify energy and thoughts. It's often used for clarity of mind, focus, and spiritual development." ,
-      "love": false,
+      "description": "Clear quartz is considered a master healer believed to amplify energy and thoughts. It's often used for clarity of mind, focus, and spiritual development.",
+      "love": true,
       "number_in_cart": 0
     },
-
-    
     {
       "id": 2,
       "name": "Rose Quartz",
@@ -28,7 +26,8 @@
       "description": "Obsidian is believed to be a stone of clarity, with the ability to release emotional, physical, and spiritual blockages, drawing out stress and tension. Obsidian is also known for clearing ancient traumas, detoxification, and encouraging personal growth.",
       "love": false,
       "number_in_cart": 0
-    },    {
+    },
+    {
       "id": 4,
       "name": "Moonstone",
       "price": 11.99,
@@ -61,7 +60,7 @@
       "price": 9.99,
       "image": "src/tiger-eyes.png",
       "description": "Tiger Eye is a shimmery golden-brown form of quartz. It supports resilience and balance while taking action aligned with one's goals and intention.",
-      "love": false,
+      "love": true,
       "number_in_cart": 0
     },
     {
@@ -88,7 +87,7 @@
       "price": 10.25,
       "image": "src/black-tourmaline.png",
       "description": "Known for its protective properties, it is believed to absorb negative energy and promote security. It's often used for grounding and protection against electromagnetic fields.",
-      "love": false,
+      "love": true,
       "number_in_cart": 0
     },
     {
@@ -125,6 +124,6 @@
   "subscription": {
     "id": 1,
     "email": "demo@flatiron.com",
-    "name" : ""
+    "name": ""
   }
 }

@@ -28,10 +28,10 @@
                 </div>
                 <div id ='add-to-cart-section'>
                     <button id = 'like' ><img id ='like-button'></button>
-                    <h3>
+                    <p>
                         Number in Cart: 
                         <span id="number-in-cart">0</span>
-                    </h3>
+                    </p>
                     <form id="cart-form">
                         <input id="cart-amount" type="text" placeholder="Number to add..."/>
                         <input id='cart-button' type="image" src="picture/move-to-cart.png" alt ='submit'>
@@ -40,7 +40,7 @@
 
                 <div id = 'review-section'>
 
-                    <form action="/action_page.php">
+                    <form id = 'review-form'>
                         <label for="name">Name:</label><br>
                         <input type="text" id="name" name="name" placeholder="Type your name here"><br>
                         <label for="review">Review / Suggestion:</label><br>
@@ -48,6 +48,8 @@
                         <input type="submit" value="Submit">
                       </form>
                 </div>
+
+                <section id = 'review-list'></section>
             </section>
         </div> 
     </body>

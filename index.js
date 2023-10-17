@@ -3,6 +3,14 @@ const totalPrice = document.createElement('h3')
 const itemImage = document.querySelector('#item-image')
 const likeButton = document.getElementById('like')
 const likeImg = document.getElementById('like-button')
+const reviewForm = document.getElementById('review-form')
+const reviewList = document.getElementById('review-list')
+const reviewName = document.getElementById('name')
+const review = document.getElementById('review')
+const numberInCart = document.getElementById('number-in-cart')
+const numberToAdd = document.getElementById('cart-amount')
+const cartForm = document.getElementById('cart-form')
+
 let currentElement
 let currentData
 let likeButtonValue
@@ -18,7 +26,6 @@ fetch('http://localhost:3000/crystals')
     currentData.forEach(element => { 
         addElementToList(element)
     })
-
 
 })
 
@@ -44,8 +51,8 @@ function addElementDetails(element){
     document.querySelector('#item-name').textContent=element.name;
     document.querySelector('#item-description').textContent=element.description;
     document.querySelector('#item-price').textContent='$ '+element.price;
-    const numberInCart = document.getElementById('number-in-cart')
-    numberInCart.textContent = element.number_in_bag
+
+    numberInCart.textContent = element.number_in_cart
     likeImg.src = element.love ? 'picture/like.png' : 'picture/unlike.png';
 
     
@@ -86,4 +93,81 @@ likeButton.addEventListener('click', () => {
     })
     .then(response => response.json())
     .then(data => console.log(data))
+})
+
+reviewForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let newReview = {
+        body: review.value,
+        name: reviewName.value
+    }
+    addReview(newReview)
+
+    fetch('http://localhost:3000/Reviews', {
+        method: "POST",
+        headers: {
+            'Content-Type': "application/json"
+        },
+        body: JSON.stringify(newReview)
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    reviewForm.reset()
+})
+
+function addReview(object) {
+    const divReview = document.createElement('div');
+    const pName = document.createElement('p');
+    const pReview = document.createElement('p')
+
+    pName.textContent = `Name: ${object.name}`;
+    pReview.textContent = `Review: ${object.body}`;
+
+    divReview.appendChild(pName);
+    divReview.appendChild(pReview);
+
+    reviewList.appendChild(divReview);
+
+    const deleteButton = document.createElement('button');
+    divReview.appendChild(deleteButton)
+    deleteButton.textContent = 'X'
+
+    deleteButton.addEventListener('click', () => {
+        divReview.remove();
+        
+        fetch(`http://localhost:3000/Reviews/${object.id}`,{
+            method: 'DELETE'
+        })
+        .then(response=> response.json())
+        .then(data => console.log(data))
+    })
+    
+}
+
+fetch('http://localhost:3000/Reviews')
+.then(response => response.json())
+.then(data => {
+    data.forEach(object => addReview(object))
+})
+
+cartForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let sum = Number(numberInCart.textContent) + Number(numberToAdd.value)
+    numberInCart.textContent = sum
+
+    currentElement.number_in_cart = sum;
+
+    fetch(`http://localhost:3000/crystals/${currentElement.id}`, {
+        method: "PATCH",
+        headers: {
+            'Content-Type': "application/json"
+        },
+        body: JSON.stringify({
+            number_in_cart: sum
+        })
+        
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    cartForm.reset()
 })

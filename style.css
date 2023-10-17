@@ -167,3 +167,18 @@ h3 {
     width: 50px;
     border-radius: 10px;
 }
+
+#name {
+    margin: 10px;
+}
+
+#review {
+    margin: 10px;
+    width: 320px;
+    height: 80px;
+}
+
+#review-section{
+    margin-left: 80px;
+    margin-top: 30px;
+}

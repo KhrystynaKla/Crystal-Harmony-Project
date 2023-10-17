@@ -5,8 +5,9 @@ const likeButton = document.getElementById('like')
 const likeImg = document.getElementById('like-button')
 let currentElement
 let currentData
+let likeButtonValue
 
-//challenge #1
+
 fetch('http://localhost:3000/crystals')
 .then(response => response.json())
 .then(data =>{
@@ -45,6 +46,8 @@ function addElementDetails(element){
     document.querySelector('#item-price').textContent='$ '+element.price;
     const numberInCart = document.getElementById('number-in-cart')
     numberInCart.textContent = element.number_in_bag
+    likeImg.src = element.love ? 'picture/like.png' : 'picture/unlike.png';
+
     
 }
 
@@ -59,12 +62,17 @@ itemImage.addEventListener('mouseout', () => {
 });
 
 likeButton.addEventListener('click', () => {
+    console.log(likeImg.src)
 
-    if(currentElement.love === false) { 
+    if(currentElement.love===false) { 
         currentElement.love = true;
+        likeButtonValue = true;
         likeImg.src = 'picture/like.png'
-    } else {
+        console.log(true)
+        
+    } else if (currentElement.love === true) {
         currentElement.love = false;
+        likeButtonValue = false;
         likeImg.src = 'picture/unlike.png'
     }
 
@@ -72,11 +80,12 @@ likeButton.addEventListener('click', () => {
         method: "PATCH",
         headers: {
             'Content-Type': "application/json",
-            'Accept' : 'application/json'
         },
         body: JSON.stringify({
-            love : currentElement.love 
+            love : likeButtonValue 
         })
     })
+    .then(response => response.json())
+    .then(data => console.log(data))
     
 })

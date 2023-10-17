@@ -15,7 +15,7 @@
       "price": 10.99,
       "image": "src/rose-quartz2.png",
       "description": "Rose quartz is a stone of love, pure and simple. It helps resolve old hurts and open the heart to receive love.",
-      "love": false,
+      "love": true,
       "number_in_cart": 0
     },
     {
@@ -60,7 +60,7 @@
       "price": 9.99,
       "image": "src/tiger-eyes.png",
       "description": "Tiger Eye is a shimmery golden-brown form of quartz. It supports resilience and balance while taking action aligned with one's goals and intention.",
-      "love": true,
+      "love": false,
       "number_in_cart": 0
     },
     {
@@ -87,7 +87,7 @@
       "price": 10.25,
       "image": "src/black-tourmaline.png",
       "description": "Known for its protective properties, it is believed to absorb negative energy and promote security. It's often used for grounding and protection against electromagnetic fields.",
-      "love": true,
+      "love": false,
       "number_in_cart": 0
     },
     {

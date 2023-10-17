@@ -66,13 +66,6 @@ html, body {
     height:100%;
 }
 
-.container2 {
-    display:relative;
-    width:90%;
-    margin-left: 40%;
-
-}
-
 #list-of-items span {
     padding: 0;
     margin: 0;
